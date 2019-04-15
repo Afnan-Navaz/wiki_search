@@ -70,3 +70,23 @@ a:hover{
 p a{
     color: #9b9b9b;
 }
+@media (max-width: 600px){
+    .cos{
+        width:400px;
+    }
+    #in{
+        margin-left: auto;
+        margin-right: auto;
+        width:250px;
+    }
+    #search{
+        width:200px;
+        height: 40px;
+    }
+    #go{
+        height: 40px;
+    }
+    h1{
+        font-size: 40px;
+    }
+}
