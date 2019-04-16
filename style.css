@@ -97,9 +97,9 @@ p a{
     .cox{
         width:350px;
         display: block;
-        margin-left: auto;
+        margin-left: 0px;
         padding:0px;
-        margin-right: auto;
+        margin-right: 0px;
     }
     h1{
         position: relative;
