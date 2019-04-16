@@ -6,6 +6,26 @@ body{
     align-content: center;
     align-self: center;
 }
+#main{
+    display: none;
+}
+.img{
+    width:200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+    top: 150px;
+    animation: rotation 2s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
 #but{
     position: fixed;
     top:0px;
@@ -35,6 +55,16 @@ body{
 .cox:hover{
     background-color: #1e1e21;
 }
+#img{
+    width:300px;
+    position: relative;
+    top:40px;
+    opacity: 0.1;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    
+}
 h1{
     color: #adabab;
     text-align: center;
@@ -60,14 +90,14 @@ h1{
     text-align: center;
     border-style: solid;
     border-width: thin;
-    border-color: #202023;
+    border-color: white;
 }
 #go{
     background-color: #292929;
     height: 50px;
     border-width: thin;
     border-style: solid;
-    border-color: #202023;
+    border-color: white white white transparent;
 }
 #content{
     display: block;
@@ -100,6 +130,7 @@ p a{
         margin-left: auto;
         padding:0px;
         margin-right: auto;
+        background-color: #1e1e21;
     }
     h1{
         position: relative;

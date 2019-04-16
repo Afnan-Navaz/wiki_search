@@ -1,3 +1,7 @@
+setTimeout(()=>{
+    document.getElementById('sub').style.display = 'none';
+    document.getElementById('main').style.display = 'block';
+}, 2000);
 document.getElementById('go').addEventListener('click', function(e){
         let search = document.getElementById('search').value;
         search = search.trim();
@@ -18,8 +22,9 @@ document.getElementById('go').addEventListener('click', function(e){
             }
         }
         xhr.send();
+        document.getElementById('search').value = '';
         e.preventDefault();
 })
 document.getElementById('search').addEventListener('click', function(){
     document.getElementById('search').value = '';
-})
+});
