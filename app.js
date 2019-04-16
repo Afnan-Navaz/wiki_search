@@ -12,7 +12,6 @@ document.getElementById('go').addEventListener('click', function(e){
                     outp += `<div class="cox">
                             <h2><a href=${url}>${x.title}</a></h2>
                             <span class="cont">${x.snippet}</span>
-                            <p><a href = ${url}>${url}</a></p>
                             </div>`;
                 })
                 document.getElementById('content').innerHTML = outp;
