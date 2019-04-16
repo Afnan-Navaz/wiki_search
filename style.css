@@ -15,6 +15,14 @@ body{
     z-index: 10;
     margin-top: 0px;
 }
+#logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    position: relative;
+    top:20px;
+}
 .cox{
     width:1200px;
     display: block;
@@ -37,6 +45,8 @@ h1{
     margin-left: auto;
     margin-right: auto;
     width:500px;
+    position: relative;
+    top:30px;
 }
 .cont{
     color:white;
