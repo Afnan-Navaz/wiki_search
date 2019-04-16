@@ -98,6 +98,7 @@ p a{
         width:400px;
         display: block;
         margin-left: auto;
+        padding:0px;
         margin-right: auto;
     }
     h1{
