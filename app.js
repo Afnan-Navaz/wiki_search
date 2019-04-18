@@ -1,7 +1,4 @@
-setTimeout(()=>{
-    document.getElementById('sub').style.display = 'none';
-    document.getElementById('main').style.display = 'block';
-}, 2000);
+
 document.getElementById('go').addEventListener('click', function(e){
         let search = document.getElementById('search').value;
         search = search.trim();
@@ -13,10 +10,12 @@ document.getElementById('go').addEventListener('click', function(e){
                 data = JSON.parse(this.responseText);
                 data.query.search.forEach(function(x){
                     let url = encodeURI(`https://en.wikipedia.org/wiki/${x.title}`);
-                    outp += `<div class="cox">
-                            <h2><a href=${url}>${x.title}</a></h2>
+                    outp += `<a href=${url}>
+                            <div class="cox">
+                            <h2>${x.title}</h2>
                             <span class="cont">${x.snippet}</span>
-                            </div>`;
+                            </div>
+                            </a>`;
                 })
                 document.getElementById('content').innerHTML = outp;
             }

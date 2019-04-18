@@ -6,9 +6,7 @@ body{
     align-content: center;
     align-self: center;
 }
-#main{
-    display: none;
-}
+
 .img{
     width:200px;
     margin-left: auto;
@@ -16,7 +14,7 @@ body{
     display: block;
     position: relative;
     top: 150px;
-    animation: rotation 2s infinite linear;
+    
 }
 @keyframes rotation {
   from {
@@ -63,7 +61,7 @@ body{
     margin-left: auto;
     margin-right: auto;
     display: block;
-    
+    animation: rotation 2s infinite linear;
 }
 h1{
     color: #adabab;
